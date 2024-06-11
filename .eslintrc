@@ -1,6 +1,8 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true,
+    "node": true
   },
   "extends": [
     "airbnb",
@@ -8,37 +10,44 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
-
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
   "rules": {
+    "prettier/prettier": ["error"],
     "react/jsx-filename-extension": [
       "warn",
       {
-        "extensions": [".jsx", ".tsx"]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-props-no-spreading":"warn",
-    "no-underscore-dangle":"warn",
-    "react/jsx-key":"warn",
-    "no-shadow":"warn",
-    "no-unused-vars":"warn",
-    "react/destructuring-assignment":"warn",
-    "react/jsx-no-useless-fragment":"warn",
-    "react/no-unstable-nested-components":"warn",
-    "react/no-unescaped-entities":"warn",
-    "react/no-array-index-key":"warn"
-
+    "react/jsx-props-no-spreading": "warn",
+    "no-underscore-dangle": "warn",
+    "react/jsx-key": "warn",
+    "no-shadow": "warn",
+    "no-unused-vars": "warn",
+    "react/destructuring-assignment": "warn",
+    "react/jsx-no-useless-fragment": "warn",
+    "react/no-unstable-nested-components": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react/no-array-index-key": "warn"
   },
   "settings": {
     "react": {
       "version": "detect"
     }
-  },
-  "parserOptions": {
-    "parser": "@babel/eslint-parser",
-    "ecmaVersion": 2022,
-    "sourceType": "module"
-},
+  }
 }

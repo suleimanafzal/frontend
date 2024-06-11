@@ -1,6 +1,6 @@
 Certainly! Below is a sample `README.md` file for a Next.js project. This file will guide users on how to set up, run, and build the project.
 
-```markdown
+````markdown
 # Next.js Project
 
 This is a Next.js project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -21,6 +21,7 @@ To get started with this project, you'll need Node.js installed on your machine.
    ```bash
    git clone https://github.com/your-username/your-nextjs-project.git
    ```
+````
 
 2. Navigate to the project directory:
 
@@ -124,6 +125,7 @@ If you would like to contribute, please follow the [Code of Conduct](CODE_OF_CON
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+
 ```
 
 ### Notes:
@@ -132,3 +134,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 - If your project has additional configuration or environment setup requirements, be sure to include those in the `README.md` too.
 
 Feel free to copy and adjust the above markdown to fit your Next.js project structure and requirements.
+```
